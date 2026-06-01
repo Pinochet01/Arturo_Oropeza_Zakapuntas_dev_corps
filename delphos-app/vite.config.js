@@ -1,0 +1,23 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+  server: {
+    port: 8081,
+    host: true,
+    allowedHosts: [
+      'all',
+      '.share.zrok.io',  // allows any subdomain of share.zrok.io
+      'localhost',
+      'penguin.linux.test',
+      '192.168.1.8'
+    ],
+  },
+})

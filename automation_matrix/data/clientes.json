@@ -1,0 +1,79 @@
+{
+  "8e1faf2febed8a88": {
+    "id": "8e1faf2febed8a88",
+    "nombre": "Cliente Demo",
+    "email": "demo@example.com",
+    "telefono": "4431234567",
+    "servicio": "cardless-payment",
+    "address_kaspa": "kaspa:2a875e7f6096554ae72c84e5dd57924001ce657d2e",
+    "address_alephium": "alephium:9b590c082bdaa9187be530729ad397b59888fe00fa",
+    "registrado": "2026-05-22T18:40:20.100572",
+    "estado": "pendiente_pago"
+  },
+  "f4eb8d1f22de492c": {
+    "id": "f4eb8d1f22de492c",
+    "nombre": "Lead Facebook",
+    "email": "",
+    "telefono": "4437654321",
+    "servicio": "general",
+    "address_kaspa": "kaspa:5baf7bfcda7461ebcf821d26ec68a5a6a24e4781be",
+    "address_alephium": "alephium:47a0e0388082009fe1572e6f23ae11ef9cfb9bfc1e",
+    "registrado": "2026-05-22T18:40:20.389091",
+    "estado": "pendiente_pago"
+  },
+  "3ba5d720f0a6b747": {
+    "id": "3ba5d720f0a6b747",
+    "nombre": "Concurrent Test 2",
+    "email": "test2@example.com",
+    "telefono": "",
+    "servicio": "general",
+    "address_kaspa": "kaspa:10bac0b2f4411637f8a464c2ee7e5371006cbfa88a",
+    "address_alephium": "alephium:7020606f3ef08c81ec9f3f376bb88e00d7f83c2fb7",
+    "registrado": "2026-05-22T18:54:41.723992",
+    "estado": "pendiente_pago"
+  },
+  "92c1b947cc7ac807": {
+    "id": "92c1b947cc7ac807",
+    "nombre": "Concurrent Test 1",
+    "email": "test1@example.com",
+    "telefono": "",
+    "servicio": "general",
+    "address_kaspa": "kaspa:345ad72296c8128f00c47af38193a9110867821786",
+    "address_alephium": "alephium:a9d9210672022068526a5d015844dc0a3a1e860c8a",
+    "registrado": "2026-05-22T18:54:41.726295",
+    "estado": "pendiente_pago"
+  },
+  "6703cdcb66d9c3c6": {
+    "id": "6703cdcb66d9c3c6",
+    "nombre": "Concurrent Test 3",
+    "email": "test3@example.com",
+    "telefono": "",
+    "servicio": "general",
+    "address_kaspa": "kaspa:fe02f4b7b1e7c10db089ca89a68133066672af21a9",
+    "address_alephium": "alephium:c0891feb40cb09c72ec8dc9ec1af90bba487f8ebb8",
+    "registrado": "2026-05-22T18:54:41.731619",
+    "estado": "pendiente_pago"
+  },
+  "b27a80cd79105e92": {
+    "id": "b27a80cd79105e92",
+    "nombre": "Test Final",
+    "email": "final@test.com",
+    "telefono": "",
+    "servicio": "general",
+    "address_kaspa": "kaspa:6bef3b76bd73f566fc449c021fb8dbe5309d74e84c",
+    "address_alephium": "alephium:4fba40bdcbc2c619c083f0478d716dc670787782cc",
+    "registrado": "2026-05-22T18:59:47.081278",
+    "estado": "pendiente_pago"
+  },
+  "281c20579a812da7": {
+    "id": "281c20579a812da7",
+    "nombre": "Meta Lead Test",
+    "email": "meta@test.com",
+    "telefono": "4431112233",
+    "servicio": "cardless-payment",
+    "address_kaspa": "kaspa:fca5c9453141f9df117d8ae324e21a0e9d31772a6c",
+    "address_alephium": "alephium:2edc94c4ac6e34b339431b5bef464245858f9aa301",
+    "registrado": "2026-05-22T20:58:18.846064",
+    "estado": "pendiente_pago"
+  }
+}

@@ -1,0 +1,1911 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CHECOS CONSTRUYENDO SUEÑOS - Empresa mexicana de construcción en Michoacán. Construcción, plomería, electricidad y más. Más de 15 años de experiencia. Servicios profesionales en Zacapu, Morelia y todo Michoacán.">
+<meta name="keywords" content="construcción, plomería, electricidad, obra civil, albañilería, Michoacán, Zacapu, Morelia, México">
+<meta name="author" content="CHECOS CONSTRUYENDO SUEÑOS">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="CHECOS CONSTRUYENDO SUEÑOS — Construcción, Plomería, Electricidad & Vitropiso">
+<meta property="og:description" content="Empresa mexicana de construcción. Servicios de construcción, plomería, electricidad e instalación de vitropiso y tablaroca. Más de 500 proyectos realizados.">
+<meta property="og:url" content="https://tecnoobraMX.com">
+<meta property="og:image" content="https://tecnoobraMX.com/assets/og-image.jpg">
+<meta property="og:site_name" content="CHECOS CONSTRUYENDO SUEÑOS">
+<meta property="og:locale" content="es_MX">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CHECOS CONSTRUYENDO SUEÑOS — Construcción, Plomería, Electricidad & Vitropiso">
+<meta name="twitter:description" content="Empresa mexicana de construcción. Servicios de construcción, plomería, electricidad e instalación de vitropiso y tablaroca.">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://tecnoobraMX.com">
+
+<title>CHECOS CONSTRUYENDO SUEÑOS — Construcción, Plomería, Electricidad & Vitropiso</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&family=Roboto+Mono:wght@300;400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet"></noscript>
+<style>
+  :root {
+    --blue-steel: #1F3B73;
+    --blue-deep: #0d1f42;
+    --blue-mid: #1a3060;
+    --orange: #FF8A00;
+    --orange-hot: #ff6b00;
+    --gray-concrete: #C7C7C7;
+    --gray-light: #e8e8e8;
+    --black: #111111;
+    --black-soft: #1a1a1a;
+    --white: #ffffff;
+    --neon-line: rgba(255, 138, 0, 0.6);
+    --blueprint-line: rgba(100, 160, 255, 0.25);
+    
+    /* Gold Circuit Theme */
+    --gold-primary: #FFD700;
+    --gold-light: #FFE44D;
+    --gold-dark: #B8860B;
+    --gold-glow: rgba(255, 215, 0, 0.6);
+    --gold-trace: rgba(255, 215, 0, 0.4);
+    --circuit-bg: #0a0a0f;
+    --hex-border: rgba(255, 215, 0, 0.3);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  *:focus { outline: 2px solid var(--orange); outline-offset: 2px; }
+  *:focus:not(:focus-visible) { outline: none; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--black);
+    color: var(--white);
+    overflow-x: hidden;
+  }
+
+  /* ─── GOLD CIRCUIT HEXAGONAL BACKGROUND ─── */
+  .blueprint-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+    background: #0a0a0f;
+  }
+
+  /* Hero: exterior image + gradient overlay */
+  #hero .blueprint-bg {
+    background: linear-gradient(180deg,rgba(10,10,20,0.5) 0%,rgba(10,21,37,0.4) 50%,rgba(0,0,0,0.75) 100%),url('assets/css/Exterior_design.png');
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .blueprint-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 30%, rgba(255, 215, 0, 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 70%, rgba(255, 215, 0, 0.06) 0%, transparent 40%),
+      radial-gradient(ellipse at 60% 20%, rgba(184, 134, 11, 0.05) 0%, transparent 35%),
+      linear-gradient(180deg, #08080c 0%, #0c0c14 50%, #08080c 100%);
+  }
+
+  /* Hexagonal grid pattern - exact replica from Ecological_Consciousness */
+  .blueprint-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='87' viewBox='0 0 50 87'%3E%3Cpath d='M25 0L50 14.43V43.5L25 57.93L0 43.5V14.43L25 0z' fill='none' stroke='%23FFD700' stroke-width='1.5' stroke-opacity='0.35'/%3E%3C/svg%3E");
+    background-size: 50px 87px;
+    background-repeat: repeat;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .bp-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.08;
+  }
+
+  /* ─── NAVBAR ─── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 68px;
+    background: rgba(10, 20, 45, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,138,0,0.25);
+  }
+
+  .nav-logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--white);
+  }
+
+  .nav-logo span { color: var(--orange); }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--gray-concrete);
+    text-decoration: none;
+    transition: color 0.3s;
+    position: relative;
+  }
+
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 0; height: 2px;
+    background: var(--orange);
+    transition: width 0.3s;
+  }
+
+  .nav-links a:hover { color: var(--white); }
+  .nav-links a:hover::after { width: 100%; }
+
+  .nav-cta {
+    background: var(--orange);
+    color: var(--black) !important;
+    padding: 8px 20px;
+    border-radius: 2px;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+  }
+
+  .nav-cta::after { display: none !important; }
+  .nav-cta:hover { background: var(--orange-hot) !important; color: var(--white) !important; }
+
+  /* ─── HERO ─── */
+  #hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 68px 5% 0;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+  }
+
+  .hero-tag {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--orange);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-tag::before {
+    content: '';
+    width: 40px; height: 1px;
+    background: var(--orange);
+  }
+
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 .accent { color: var(--orange); }
+
+  .hero-sub {
+    font-size: 1rem;
+    color: var(--gray-concrete);
+    line-height: 1.7;
+    max-width: 540px;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+  }
+
+  .hero-btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--orange);
+    color: var(--black);
+    padding: 14px 32px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+  }
+
+  .btn-primary:hover {
+    background: var(--orange-hot);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(255,138,0,0.4);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--white);
+    padding: 13px 32px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid rgba(255,255,255,0.35);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--orange);
+    color: var(--orange);
+  }
+
+  /* Hero stats */
+  .hero-stats {
+    position: absolute;
+    right: 5%;
+    bottom: 12%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .stat-item {
+    text-align: right;
+    border-right: 2px solid var(--orange);
+    padding-right: 1.2rem;
+  }
+
+  .stat-num {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--orange);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray-concrete);
+    font-weight: 500;
+  }
+
+  /* Hero bottom band */
+  .hero-bottom {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--orange), var(--blue-steel), transparent);
+  }
+
+  /* ─── SECTION GENERIC ─── */
+  section { padding: 100px 5%; }
+
+  .section-label {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--orange);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-label::before {
+    content: '';
+    width: 30px; height: 1px;
+    background: var(--orange);
+  }
+
+  h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-divider {
+    width: 60px; height: 3px;
+    background: var(--orange);
+    margin: 1.5rem 0 3rem;
+  }
+
+  /* ─── SERVICIOS ─── */
+  #servicios {
+    background: var(--black-soft);
+    position: relative;
+  }
+
+  #servicios::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--orange), transparent);
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5px;
+    background: rgba(255,138,0,0.15);
+  }
+
+  .service-card {
+    background: var(--black-soft);
+    padding: 2.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  .service-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(31,59,115,0.6), rgba(255,138,0,0.05));
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  .service-card:hover::before { opacity: 1; }
+
+  .service-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0; height: 3px;
+    background: var(--orange);
+    transition: width 0.4s;
+  }
+
+  .service-card:hover::after { width: 100%; }
+
+  .service-icon {
+    width: 56px; height: 56px;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .service-icon svg {
+    width: 100%; height: 100%;
+    stroke: var(--orange);
+    fill: none;
+    stroke-width: 1.5;
+  }
+
+  .service-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+  }
+
+  .service-card:hover h3 { color: var(--orange); }
+
+  .service-card p {
+    font-size: 0.85rem;
+    color: var(--gray-concrete);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--orange);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,138,0,0.4);
+    padding-bottom: 2px;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn-outline:hover { border-color: var(--orange); gap: 14px; }
+
+  /* ─── CULTURA ─── */
+  #cultura {
+    background: var(--blue-deep);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cultura-bg {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(100,160,255,0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(100,160,255,0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .mv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    margin-bottom: 4rem;
+    background: rgba(255,138,0,0.1);
+  }
+
+  .mv-card {
+    background: var(--blue-deep);
+    padding: 3rem 2.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .mv-card-label {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 1rem;
+  }
+
+  .mv-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .mv-card p {
+    font-size: 0.9rem;
+    color: var(--gray-concrete);
+    line-height: 1.8;
+  }
+
+  .valores-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .valor-item {
+    border: 1px solid rgba(255,138,0,0.2);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    transition: all 0.3s;
+    background: rgba(31,59,115,0.3);
+  }
+
+  .valor-item:hover {
+    border-color: var(--orange);
+    background: rgba(255,138,0,0.08);
+    transform: translateY(-4px);
+  }
+
+  .valor-emoji {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+
+  .valor-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--gray-light);
+  }
+
+  /* ─── GALERÍA ─── */
+  #galeria {
+    background: var(--black);
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 220px 220px;
+    gap: 3px;
+    margin-top: 3rem;
+  }
+
+  .gallery-item {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .gallery-item:nth-child(1) { grid-column: span 5; }
+  .gallery-item:nth-child(2) { grid-column: span 4; }
+  .gallery-item:nth-child(3) { grid-column: span 3; }
+  .gallery-item:nth-child(4) { grid-column: span 3; }
+  .gallery-item:nth-child(5) { grid-column: span 4; }
+  .gallery-item:nth-child(6) { grid-column: span 5; }
+
+  .gallery-placeholder {
+    width: 100%; height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.8rem;
+    transition: transform 0.5s;
+  }
+
+  .gallery-item:hover .gallery-placeholder { transform: scale(1.06); }
+
+  .gallery-item:hover .gallery-overlay { opacity: 1; }
+
+  .gp-1 { background: linear-gradient(135deg, #1a2f5a, #0d1f42); }
+  .gp-2 { background: linear-gradient(135deg, #2a1a0a, #1a0f05); }
+  .gp-3 { background: linear-gradient(135deg, #0a1a0a, #0d200d); }
+  .gp-4 { background: linear-gradient(135deg, #1a0a1a, #200d20); }
+  .gp-5 { background: linear-gradient(135deg, #1a1500, #201a00); }
+  .gp-6 { background: linear-gradient(135deg, #0a1628, #1a2f5a); }
+
+  .gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255,138,0,0.12);
+    border: 2px solid var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  .gallery-overlay span {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--orange);
+    background: rgba(0,0,0,0.7);
+    padding: 6px 14px;
+  }
+
+  .gallery-icon {
+    font-size: 2.5rem;
+    opacity: 0.5;
+  }
+
+  .gallery-label {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+  }
+
+  .gallery-desc {
+    font-size: 0.7rem;
+    color: var(--gray-concrete);
+    margin-top: 0.3rem;
+    font-weight: 400;
+  }
+
+  .gallery-photos {
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    color: var(--orange);
+    font-weight: 500;
+  }
+
+  .gallery-icon svg {
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item:hover .gallery-icon svg {
+    transform: scale(1.1);
+  }
+
+  /* ─── TESTIMONIOS ─── */
+  #testimonios {
+    background: var(--black-soft);
+    position: relative;
+  }
+
+  #testimonios::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,138,0,0.4), transparent);
+  }
+
+  .testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .testimonio-card {
+    background: var(--black);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 2rem;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  .testimonio-card::before {
+    content: '"';
+    position: absolute;
+    top: -10px; left: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    color: var(--orange);
+    opacity: 0.3;
+    line-height: 1;
+  }
+
+  .testimonio-card:hover {
+    border-color: rgba(255,138,0,0.3);
+    transform: translateY(-4px);
+  }
+
+  .stars {
+    color: var(--orange);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+
+  .testimonio-text {
+    font-size: 0.88rem;
+    color: var(--gray-concrete);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+
+  .testimonio-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .author-avatar {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .av-1 { background: linear-gradient(135deg, var(--blue-steel), #2a50a0); color: var(--white); }
+  .av-2 { background: linear-gradient(135deg, var(--orange), #ff6b00); color: var(--black); }
+  .av-3 { background: linear-gradient(135deg, #1a5a1a, #2a8a2a); color: var(--white); }
+  .av-4 { background: linear-gradient(135deg, #5a1a5a, #8a2a8a); color: var(--white); }
+  .av-5 { background: linear-gradient(135deg, #5a4a1a, #8a7a2a); color: var(--black); }
+
+  .author-info .name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .author-info .role {
+    font-size: 0.72rem;
+    color: var(--gray-concrete);
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1px;
+  }
+
+  /* ─── CONTACTO ─── */
+  #contacto {
+    background: var(--blue-deep);
+    position: relative;
+    overflow: hidden;
+  }
+
+/* Hero exterior image background - like contacto-bg */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-color: #080810;
+  background-image: url('assets/css/Exterior_design.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* House blueprint background using blueprint.png */
+.contacto-bg {
+  position: absolute;
+  inset: 0;
+  background-color: #0d1f42;
+  background-image: url('assets/css/blueprint.png');
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 6rem;
+    position: relative;
+    z-index: 1;
+    align-items: start;
+  }
+
+  .contacto-info h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+  }
+
+  .contacto-info p {
+    font-size: 0.88rem;
+    color: var(--gray-concrete);
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    font-size: 0.85rem;
+    color: var(--gray-concrete);
+  }
+
+  .contact-detail-icon {
+    width: 36px; height: 36px;
+    border: 1px solid rgba(255,138,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+    color: var(--orange);
+  }
+
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+
+  .form-group label {
+    display: block;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray-concrete);
+    margin-bottom: 0.5rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: var(--white);
+    padding: 12px 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.88rem;
+    outline: none;
+    transition: border-color 0.3s;
+    -webkit-appearance: none;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--orange);
+    background: rgba(255,138,0,0.04);
+  }
+
+  .form-group select option { background: var(--blue-deep); color: var(--white); }
+
+  .form-group textarea { min-height: 100px; resize: vertical; }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--black);
+    border-top: 1px solid rgba(255,138,0,0.2);
+    padding: 60px 5% 30px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer-brand .logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+
+  .footer-brand .logo span { color: var(--orange); }
+
+  .footer-brand p {
+    font-size: 0.8rem;
+    color: rgba(199,199,199,0.6);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-col h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 1.2rem;
+  }
+
+  .footer-col ul { list-style: none; }
+
+  .footer-col ul li {
+    font-size: 0.8rem;
+    color: rgba(199,199,199,0.6);
+    margin-bottom: 0.6rem;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+
+  .footer-col ul li:hover { color: var(--white); }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    color: rgba(199,199,199,0.3);
+  }
+
+  .social-links {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  .social-link {
+    width: 34px; height: 34px;
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: var(--gray-concrete);
+  }
+
+  .social-link:hover {
+    border-color: var(--orange);
+    color: var(--orange);
+  }
+
+  /* ─── WHATSAPP FLOAT ─── */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: pulse-wa 2.5s infinite;
+  }
+
+  .whatsapp-float:hover {
+    background-color: #20ba5a;
+    transform: scale(1.12);
+    box-shadow: 0 6px 25px rgba(37,211,102,0.65);
+  }
+
+  .whatsapp-float svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  @keyframes pulse-wa {
+    0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.5); }
+    50% { box-shadow: 0 4px 40px rgba(37,211,102,0.8); }
+  }
+
+  .whatsapp-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .whatsapp-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* ─── ANIMATIONS ─── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ─── SCROLLBAR ─── */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--black); }
+  ::-webkit-scrollbar-thumb { background: var(--orange); }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 900px) {
+    .nav-toggle {
+      display: none;
+    }
+  }
+
+  /* Navbar mobile toggle - gold styling */
+  @media (max-width: 900px) {
+    .nav-toggle {
+      display: flex !important;
+      border: 2px solid var(--orange) !important;
+      background: linear-gradient(135deg, #1a1a1a 0%, #0d1f42 50%, var(--orange) 100%) !important;
+      padding: 6px !important;
+      border-radius: 50% !important;
+      transition: all 0.3s ease !important;
+      box-shadow: 0 2px 6px rgba(255, 138, 0, 0.3), inset 0 1px 0 rgba(255,255,255,0.2) !important;
+      width: 42px !important;
+      height: 42px !important;
+      align-items: center !important;
+      justify-content: center !important;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .nav-toggle:hover {
+      background: linear-gradient(135deg, var(--orange) 0%, #ff6b00 50%, #B8860B 100%) !important;
+      transform: scale(1.05) !important;
+      box-shadow: 0 4px 12px rgba(255, 138, 0, 0.5) !important;
+    }
+
+    .nav-toggle:focus {
+      box-shadow: 0 0 0 3px rgba(255, 138, 0, 0.4) !important;
+      outline: none !important;
+    }
+
+    .nav-toggle-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath stroke='%23FF8A00' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M3 5h14M3 10h14M3 15h14'/%3e%3c/svg%3e") !important;
+      width: 20px !important;
+      height: 20px !important;
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .nav-toggle.active .nav-toggle-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 4l12 12M4 16l12-12'/%3e%3c/svg%3e") !important;
+    }
+
+    nav {
+      padding: 0 5%;
+      justify-content: space-between;
+    }
+
+    .nav-links {
+      display: none;
+      position: fixed;
+      top: 68px;
+      left: 0;
+      right: 0;
+      background: rgba(10, 20, 45, 0.98);
+      flex-direction: column;
+      padding: 1rem 5%;
+      gap: 0;
+      z-index: 999;
+      border-bottom: 1px solid rgba(255, 138, 0, 0.3);
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .nav-links li {
+      border-bottom: 1px solid rgba(255, 138, 0, 0.1);
+    }
+
+    .nav-links a {
+      display: block;
+      padding: 1rem 0;
+      font-size: 1rem;
+    }
+
+    .hero-stats { display: none; }
+    .mv-grid { grid-template-columns: 1fr; }
+    .gallery-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+    .gallery-item { grid-column: span 1 !important; height: 200px; }
+    .contacto-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+
+  @media (min-width: 901px) {
+    .nav-toggle {
+      display: none !important;
+    }
+  }
+
+  /* Prevent horizontal scroll - from Ecological_Consciousness fixes */
+  body {
+    overflow-x: hidden;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  .row {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  section, header, footer {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .d-flex, .flex-row, .nav-links {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  [class*="col-"] {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  /* Mobile overflow fixes */
+  @media (max-width: 576px) {
+    .nav-logo {
+      font-size: 0.95rem;
+      max-width: 160px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .nav-logo span {
+      display: inline;
+    }
+    .nav-links {
+      max-height: 80vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    .nav-links a {
+      padding: 0.75rem 1rem;
+      font-size: 0.9rem;
+    }
+    .nav-links a.nav-cta {
+      margin: 0.5rem 0;
+      text-align: center;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      font-size: 16px;
+    }
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .footer-bottom {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav aria-label="Navegación principal">
+  <div class="nav-logo" role="img" aria-label="CHECOS CONSTRUYENDO SUEÑOS">CHECOS<span>CONSTRUYENDO</span> SUEÑOS</div>
+  <button type="button" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+    <span class="nav-toggle-icon"></span>
+  </button>
+  <ul class="nav-links" role="navigation" aria-label="Menú de navegación" id="main-nav">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#cultura">Nosotros</a></li>
+    <li><a href="#galeria">Proyectos</a></li>
+    <li><a href="#testimonios">Clientes</a></li>
+    <li><a href="#contacto" class="nav-cta">Cotizar</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="blueprint-bg">
+    <div class="hero-bg"></div>
+    <!-- Blueprint SVG lines -->
+    <svg class="bp-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <!-- Floor plan walls -->
+      <g stroke="rgba(120,180,255,0.8)" stroke-width="1.5" fill="none">
+        <rect x="60" y="80" width="220" height="160"/>
+        <rect x="80" y="100" width="180" height="60"/>
+        <rect x="80" y="170" width="80" height="60"/>
+        <line x1="160" y1="170" x2="160" y2="230"/>
+        <rect x="320" y="60" width="150" height="200"/>
+        <line x1="320" y1="140" x2="470" y2="140"/>
+        <rect x="510" y="100" width="100" height="120"/>
+        <!-- Dimension lines -->
+        <line x1="60" y1="260" x2="280" y2="260" stroke="rgba(255,138,0,0.6)" stroke-width="1" stroke-dasharray="4,3"/>
+        <line x1="60" y1="255" x2="60" y2="265" stroke="rgba(255,138,0,0.6)"/>
+        <line x1="280" y1="255" x2="280" y2="265" stroke="rgba(255,138,0,0.6)"/>
+        <text x="170" y="275" fill="rgba(255,138,0,0.7)" font-size="9" font-family="monospace" text-anchor="middle">6.50 m</text>
+        <line x1="55" y1="80" x2="55" y2="240" stroke="rgba(255,138,0,0.6)" stroke-width="1" stroke-dasharray="4,3"/>
+        <line x1="50" y1="80" x2="60" y2="80" stroke="rgba(255,138,0,0.6)"/>
+        <line x1="50" y1="240" x2="60" y2="240" stroke="rgba(255,138,0,0.6)"/>
+        <text x="42" y="160" fill="rgba(255,138,0,0.7)" font-size="9" font-family="monospace" text-anchor="middle" transform="rotate(-90,42,160)">4.80 m</text>
+      </g>
+      <!-- Electrical symbols -->
+      <g stroke="rgba(255,220,80,0.7)" stroke-width="1.2" fill="none">
+        <circle cx="850" cy="120" r="12"/>
+        <line x1="838" y1="120" x2="862" y2="120"/>
+        <line x1="850" y1="108" x2="850" y2="132"/>
+        <circle cx="920" cy="120" r="8"/>
+        <circle cx="920" cy="120" r="3" fill="rgba(255,220,80,0.7)"/>
+        <line x1="850" y1="120" x2="900" y2="120"/>
+        <line x1="928" y1="120" x2="980" y2="120"/>
+        <!-- Switch -->
+        <circle cx="990" cy="120" r="5"/>
+        <line x1="990" y1="120" x2="1010" y2="105"/>
+        <circle cx="1010" cy="105" r="3"/>
+        <!-- Wiring paths -->
+        <polyline points="850,132 850,200 920,200 920,155" stroke-dasharray="none"/>
+        <polyline points="990,120 990,200 1100,200 1100,150"/>
+        <line x1="1100" y1="130" x2="1100" y2="170"/>
+        <line x1="1090" y1="130" x2="1110" y2="130"/>
+        <line x1="1090" y1="140" x2="1110" y2="140"/>
+        <line x1="1090" y1="150" x2="1110" y2="150"/>
+      </g>
+      <!-- Plumbing -->
+      <g stroke="rgba(80,200,255,0.65)" stroke-width="2" fill="none">
+        <line x1="650" y1="400" x2="900" y2="400"/>
+        <line x1="750" y1="400" x2="750" y2="500"/>
+        <line x1="800" y1="400" x2="800" y2="480"/>
+        <!-- Valve symbol -->
+        <polygon points="770,390 780,400 770,410 760,400" fill="rgba(80,200,255,0.2)" stroke="rgba(80,200,255,0.65)"/>
+        <!-- Pipe fittings -->
+        <circle cx="650" cy="400" r="6" fill="rgba(80,200,255,0.2)"/>
+        <circle cx="900" cy="400" r="6" fill="rgba(80,200,255,0.2)"/>
+        <circle cx="750" cy="500" r="8"/>
+        <circle cx="750" cy="500" r="3" fill="rgba(80,200,255,0.5)"/>
+        <!-- T-junction -->
+        <rect x="795" y="395" width="10" height="10" fill="rgba(80,200,255,0.2)"/>
+        <text x="730" y="395" fill="rgba(80,200,255,0.7)" font-size="8" font-family="monospace">Ø 2"</text>
+      </g>
+      <!-- Pneumatic -->
+      <g stroke="rgba(200,100,255,0.55)" stroke-width="1.5" fill="none">
+        <ellipse cx="1200" cy="300" rx="40" ry="28"/>
+        <text x="1200" y="304" fill="rgba(200,100,255,0.7)" font-size="9" font-family="monospace" text-anchor="middle">COMP</text>
+        <line x1="1240" y1="300" x2="1350" y2="300"/>
+        <line x1="1350" y1="260" x2="1350" y2="340"/>
+        <!-- Actuator -->
+        <rect x="1350" y="285" width="50" height="30" fill="rgba(200,100,255,0.1)"/>
+        <line x1="1400" y1="300" x2="1430" y2="300"/>
+        <circle cx="1435" cy="300" r="5" fill="rgba(200,100,255,0.4)"/>
+        <!-- Pressure arrow -->
+        <line x1="1270" y1="290" x2="1290" y2="300"/>
+        <line x1="1270" y1="310" x2="1290" y2="300"/>
+        <text x="1260" y="286" fill="rgba(200,100,255,0.7)" font-size="8" font-family="monospace">6 bar</text>
+      </g>
+      <!-- Large floor plan lower section -->
+      <g stroke="rgba(120,180,255,0.5)" stroke-width="1" fill="none">
+        <rect x="100" y="550" width="350" height="280"/>
+        <rect x="100" y="550" width="150" height="130"/>
+        <rect x="100" y="680" width="150" height="150"/>
+        <rect x="250" y="550" width="200" height="80"/>
+        <rect x="250" y="630" width="200" height="200"/>
+        <!-- Door arcs -->
+        <path d="M 100 680 Q 130 680 130 650" stroke-dasharray="3,2"/>
+        <path d="M 250 630 Q 280 630 280 600" stroke-dasharray="3,2"/>
+        <!-- Room labels -->
+        <text x="160" y="620" fill="rgba(120,180,255,0.5)" font-size="8" font-family="monospace" text-anchor="middle">SALA</text>
+        <text x="340" y="740" fill="rgba(120,180,255,0.5)" font-size="8" font-family="monospace" text-anchor="middle">COCINA</text>
+        <text x="160" y="760" fill="rgba(120,180,255,0.5)" font-size="8" font-family="monospace" text-anchor="middle">RECÁMARA</text>
+      </g>
+      <!-- Technical cross hairs -->
+      <g stroke="rgba(255,138,0,0.3)" stroke-width="0.8">
+        <line x1="700" y1="0" x2="700" y2="900"/>
+        <line x1="0" y1="450" x2="1440" y2="450"/>
+        <circle cx="700" cy="450" r="30" stroke-dasharray="5,5"/>
+        <circle cx="700" cy="450" r="60" stroke-dasharray="8,8" opacity="0.4"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- Dark overlay gradient -->
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg, rgba(6,14,31,0.85) 0%, rgba(10,25,50,0.6) 50%, rgba(0,0,0,0.8) 100%);z-index:1;"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag">Empresa Mexicana de Construcción — Desde 2010</div>
+    <h1>Soluciones<br><span class="accent">Profesionales</span> en<br>Construcción &<br>Instalaciones</h1>
+    <p class="hero-sub">Construcción, plomería, electricidad y más. Calidad, compromiso y experiencia al servicio de México.</p>
+    <div class="hero-btns">
+      <a href="#contacto" class="btn-primary">Solicitar Cotización</a>
+<a href="https://wa.me/5214436942217" class="btn-secondary">
+        <svg viewBox="0 0 48 48" width="18" height="18" fill="#25d366"><path d="M24 4C12.954 4 4 12.954 4 24c0 3.531.929 6.85 2.555 9.72L4 44l10.52-2.52A19.9 19.9 0 0 0 24 44c11.046 0 20-8.954 20-20S35.046 4 24 4z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18.2 15.6c-.4-.9-.8-.92-1.18-.94-.3-.01-.65-.01-1-.01-.35 0-.92.13-1.4.65-.48.52-1.84 1.8-1.84 4.38 0 2.58 1.88 5.08 2.14 5.43.26.35 3.64 5.77 8.96 7.85 4.43 1.75 5.33 1.4 6.29 1.31.96-.09 3.1-1.27 3.54-2.49.44-1.22.44-2.27.31-2.49-.13-.22-.48-.35-.99-.61-.52-.26-3.1-1.53-3.58-1.7-.48-.18-.83-.26-1.18.26-.35.52-1.35 1.7-1.66 2.05-.3.35-.61.39-1.13.13-.52-.26-2.2-.81-4.19-2.58-1.55-1.38-2.6-3.08-2.9-3.6-.31-.52-.03-.8.23-1.06.23-.23.52-.61.78-.91.26-.3.35-.52.52-.87.18-.35.09-.65-.04-.91-.13-.26-1.16-2.85-1.62-3.89z" fill="white"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-num">500+</div>
+      <div class="stat-label">Proyectos</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">15</div>
+      <div class="stat-label">Años exp.</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Satisfacción</div>
+    </div>
+  </div>
+
+  <div class="hero-bottom"></div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="section-label">Nuestros Servicios</div>
+  <h2>¿Qué Hacemos?</h2>
+  <div class="section-divider"></div>
+
+  <div class="services-grid">
+    <!-- Albañilería -->
+    <div class="service-card fade-in">
+      <div class="service-icon">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="36" width="48" height="8"/>
+          <rect x="12" y="28" width="22" height="8"/>
+          <rect x="36" y="28" width="22" height="8"/>
+          <rect x="8" y="20" width="48" height="8"/>
+          <line x1="32" y1="8" x2="32" y2="20"/>
+          <line x1="20" y1="8" x2="44" y2="8"/>
+          <line x1="20" y1="8" x2="20" y2="14"/>
+          <line x1="44" y1="8" x2="44" y2="14"/>
+        </svg>
+      </div>
+      <h3>Albañilería y Obra Civil</h3>
+      <p>Construcción y remodelación de espacios residenciales e industriales. Trabajamos con los mejores materiales y técnicas de construcción modernas para garantizar durabilidad.</p>
+      <a href="#contacto" class="btn-outline">Más información →</a>
+    </div>
+
+    <!-- Plomería -->
+    <div class="service-card fade-in">
+      <div class="service-icon">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 16 8 L 16 28 Q 16 32 20 32 L 44 32 Q 48 32 48 36 L 48 56"/>
+          <circle cx="48" cy="56" r="6"/>
+          <rect x="12" y="28" width="8" height="8" rx="1"/>
+          <line x1="28" y1="32" x2="36" y2="32"/>
+          <path d="M 8 32 L 16 32"/>
+          <circle cx="16" cy="32" r="4"/>
+        </svg>
+      </div>
+      <h3>Plomería e Instalaciones Hidráulicas</h3>
+      <p>Diseño e instalación de sistemas hidráulicos y sanitarios. Desde tuberías residenciales hasta sistemas industriales de alta presión con cumplimiento de normas NOM.</p>
+      <a href="#contacto" class="btn-outline">Más información →</a>
+    </div>
+
+    <!-- Electricidad -->
+    <div class="service-card fade-in">
+      <div class="service-icon">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="36,8 20,36 32,36 28,56 44,28 32,28"/>
+          <circle cx="32" cy="32" r="28" stroke-dasharray="6,4" opacity="0.4"/>
+        </svg>
+      </div>
+      <h3>Electricidad Residencial e Industrial</h3>
+      <p>Instalaciones eléctricas certificadas para hogar, empresa e industria. Tableros, centros de carga, iluminación LED, sistemas de tierra física y protección contra sobretensiones.</p>
+      <a href="#contacto" class="btn-outline">Más información →</a>
+    </div>
+
+    <!-- Vitropiso y Tablaroca -->
+    <div class="service-card fade-in">
+      <div class="service-icon">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="16" width="48" height="32" rx="2"/>
+          <line x1="32" y1="16" x2="32" y2="48"/>
+          <line x1="8" y1="32" x2="56" y2="32"/>
+          <rect x="12" y="20" width="18" height="10" rx="1"/>
+          <rect x="34" y="20" width="18" height="10" rx="1"/>
+          <circle cx="21" cy="38" r="3"/>
+          <circle cx="43" cy="38" r="3"/>
+          <path d="M 8 16 L 12 8 L 52 8 L 56 16" fill="none"/>
+        </svg>
+      </div>
+      <h3>Vitropiso y Tablaroca</h3>
+      <p>Instalación profesional de vitropiso y tablaroca de primera calidad. Acabados perfectos para baños, cocinas y pisos. Variedad de diseños y colores.</p>
+      <a href="#contacto" class="btn-outline">Más información →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURA -->
+<section id="cultura">
+  <div class="cultura-bg"></div>
+  <div class="section-label" style="position:relative;z-index:1;">Quiénes Somos</div>
+  <h2 style="position:relative;z-index:1;">Cultura Corporativa</h2>
+  <div class="section-divider" style="position:relative;z-index:1;"></div>
+
+  <div class="mv-grid fade-in">
+    <div class="mv-card">
+      <div class="mv-card-label">// misión</div>
+      <h3>Misión</h3>
+      <p>Brindar soluciones integrales con calidad, seguridad y profesionalismo en cada proyecto, superando las expectativas de nuestros clientes mediante innovación técnica y un equipo humano comprometido con la excelencia.</p>
+    </div>
+    <div class="mv-card">
+      <div class="mv-card-label">// visión</div>
+      <h3>Visión</h3>
+      <p>Ser la empresa técnica más confiable y recomendada en México por su excelencia y compromiso. Expandir nuestra presencia nacional como referente de calidad en construcción e instalaciones industriales para 2030.</p>
+    </div>
+  </div>
+
+  <div class="valores-title" style="position:relative;z-index:1;">Nuestros Valores</div>
+  <div class="valores-grid">
+    <div class="valor-item fade-in">
+      <span class="valor-emoji">🏆</span>
+      <div class="valor-name">Profesionalismo</div>
+    </div>
+    <div class="valor-item fade-in">
+      <span class="valor-emoji">🤝</span>
+      <div class="valor-name">Honestidad</div>
+    </div>
+    <div class="valor-item fade-in">
+      <span class="valor-emoji">✅</span>
+      <div class="valor-name">Calidad y Seguridad</div>
+    </div>
+    <div class="valor-item fade-in">
+      <span class="valor-emoji">🌟</span>
+      <div class="valor-name">Respeto</div>
+    </div>
+    <div class="valor-item fade-in">
+      <span class="valor-emoji">💡</span>
+      <div class="valor-name">Innovación</div>
+    </div>
+    <div class="valor-item fade-in">
+      <span class="valor-emoji">📋</span>
+      <div class="valor-name">Cumplimiento</div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria">
+  <div class="section-label">Portafolio</div>
+  <h2>Proyectos Realizados</h2>
+  <div class="section-divider"></div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <div class="gallery-placeholder gp-1">
+        <div class="gallery-icon">
+          <svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="#FFD700" stroke-width="1.5"><rect x="8" y="20" width="48" height="32" rx="2"/><rect x="16" y="28" width="15" height="12"/><rect x="33" y="28" width="15" height="20"/><line x1="8" y1="20" x2="32" y2="4"/><line x1="56" y1="20" x2="32" y2="4"/></svg>
+        </div>
+        <div class="gallery-label">Obra Civil — Zacapu</div>
+        <div class="gallery-desc">Construcción de nave industrial de 500m² · 2024</div>
+        <div class="gallery-photos"><span>📷 12 fotos</span> · <span>🎬 2 videos</span></div>
+      </div>
+      <div class="gallery-overlay"><span>Ver Proyecto</span></div>
+    </div>
+    
+    <div class="gallery-item">
+      <div class="gallery-placeholder gp-2">
+        <div class="gallery-icon">
+          <svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="#FFD700" stroke-width="1.5"><circle cx="20" cy="32" r="12"/><line x1="32" y1="32" x2="56" y2="32"/><rect x="44" y="24" width="12" height="16" rx="2"/></svg>
+        </div>
+        <div class="gallery-label">Instalación Eléctrica Industrial</div>
+        <div class="gallery-desc">Centro de carga 400A · Morelia · 2023</div>
+        <div class="gallery-photos"><span>📷 8 fotos</span> · <span>🎬 1 video</span></div>
+      </div>
+      <div class="gallery-overlay"><span>Ver Proyecto</span></div>
+    </div>
+    
+    <div class="gallery-item">
+      <div class="gallery-placeholder gp-3">
+        <div class="gallery-icon">
+          <svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="#FFD700" stroke-width="1.5"><path d="M16 8 L16 28 Q16 32 20 32 L44 32 Q48 32 48 36 L48 56"/><circle cx="48" cy="56" r="6"/></svg>
+        </div>
+        <div class="gallery-label">Sistema Hidráulico</div>
+        <div class="gallery-desc">Red hidráulica edificio 8 deptos · Zacapu · 2024</div>
+        <div class="gallery-photos"><span>📷 15 fotos</span> · <span>🎬 3 videos</span></div>
+      </div>
+      <div class="gallery-overlay"><span>Ver Proyecto</span></div>
+    </div>
+    
+    <div class="gallery-item">
+      <div class="gallery-placeholder gp-4">
+        <div class="gallery-icon">
+          <svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="#FFD700" stroke-width="1.5"><rect x="8" y="16" width="48" height="32" rx="1"/><line x1="32" y1="16" x2="32" y2="48"/><line x1="8" y1="32" x2="56" y2="32"/></svg>
+        </div>
+        <div class="gallery-label">Vitropiso — Morelia</div>
+        <div class="gallery-desc">Acabado vitropiso 200m² · 2023</div>
+        <div class="gallery-photos"><span>📷 20 fotos</span> · <span>🎬 4 videos</span></div>
+      </div>
+      <div class="gallery-overlay"><span>Ver Proyecto</span></div>
+    </div>
+    
+    <div class="gallery-item">
+      <div class="gallery-placeholder gp-5">
+        <div class="gallery-icon">
+          <svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="#FFD700" stroke-width="1.5"><rect x="12" y="24" width="40" height="28" rx="2"/><rect x="20" y="32" width="24" height="12"/><circle cx="32" cy="38" r="4"/></svg>
+        </div>
+        <div class="gallery-label">Remodelación Residencial</div>
+        <div class="gallery-desc">Casa habitation 150m² · Uruapan · 2024</div>
+        <div class="gallery-photos"><span>📷 25 fotos</span> · <span>🎬 5 videos</span></div>
+      </div>
+      <div class="gallery-overlay"><span>Ver Proyecto</span></div>
+    </div>
+    
+    <div class="gallery-item">
+      <div class="gallery-placeholder gp-6">
+        <div class="gallery-icon">
+          <svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="#FFD700" stroke-width="1.5"><circle cx="24" cy="24" r="8"/><circle cx="24" cy="24" r="3"/><rect x="36" y="20" width="16" height="24" rx="2"/><line x1="20" y1="44" x2="44" y2="44"/></svg>
+        </div>
+        <div class="gallery-label">Mantenimiento Industrial</div>
+        <div class="gallery-desc">Planta maquilera · Zamora · 2024</div>
+        <div class="gallery-photos"><span>📷 18 fotos</span> · <span>🎬 2 videos</span></div>
+      </div>
+      <div class="gallery-overlay"><span>Ver Proyecto</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios">
+  <div class="section-label">Lo que dicen</div>
+  <h2>Clientes Satisfechos</h2>
+  <div class="section-divider"></div>
+
+  <div class="testimonios-grid">
+    <div class="testimonio-card fade-in">
+      <div class="stars">★★★★★</div>
+      <p class="testimonio-text">Excelente trabajo, puntuales y muy profesionales. Renovaron toda la instalación eléctrica de mi nave industrial sin interrumpir operaciones. Muy recomendados.</p>
+      <div class="testimonio-author">
+        <div class="author-avatar av-1">JM</div>
+        <div class="author-info">
+          <div class="name">Jorge Martínez</div>
+          <div class="role">Gerente de Planta — Morelia</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonio-card fade-in">
+      <div class="stars">★★★★★</div>
+      <p class="testimonio-text">Contratamos TecnoObra para la plomería de un edificio de 8 departamentos. Trabajo limpio, en tiempo y con garantía. Los volvería a contratar sin dudar.</p>
+      <div class="testimonio-author">
+        <div class="author-avatar av-2">AL</div>
+        <div class="author-info">
+          <div class="name">Ana Luisa Ramírez</div>
+          <div class="role">Desarrolladora Inmobiliaria — Zacapu</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonio-card fade-in">
+      <div class="stars">★★★★★</div>
+      <p class="testimonio-text">Instalaron la red neumática completa de nuestra planta. El diseño fue impecable y el tiempo de entrega superó nuestras expectativas. Profesionalismo total.</p>
+      <div class="testimonio-author">
+        <div class="author-avatar av-3">RC</div>
+        <div class="author-info">
+          <div class="name">Roberto Cervantes</div>
+          <div class="role">Director Técnico — Uruapan</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonio-card fade-in">
+      <div class="stars">★★★★★</div>
+      <p class="testimonio-text">Remodelamos nuestra casa completamente con ellos. Albañilería, electricidad y plomería en una sola empresa. Ahorro de tiempo y el resultado fue increíble.</p>
+      <div class="testimonio-author">
+        <div class="author-avatar av-4">MG</div>
+        <div class="author-info">
+          <div class="name">María González</div>
+          <div class="role">Propietaria — Morelia</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonio-card fade-in">
+      <div class="stars">★★★★★</div>
+      <p class="testimonio-text">Resolvieron una fuga complicada que otros no pudieron. Diagnóstico preciso, solución rápida y precio justo. Honestidad y calidad en cada paso del trabajo.</p>
+      <div class="testimonio-author">
+        <div class="author-avatar av-5">FH</div>
+        <div class="author-info">
+          <div class="name">Fernando Herrera</div>
+          <div class="role">Administrador — Zamora</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" aria-labelledby="contacto-titulo">
+  <div class="contacto-bg"></div>
+  <div class="section-label" style="position:relative;z-index:1;" id="contacto-titulo">Contacto</div>
+  <h2 style="position:relative;z-index:1;">Solicita tu Cotización</h2>
+  <div class="section-divider" style="position:relative;z-index:1;"></div>
+
+  <form class="contacto-grid" action="#" method="POST" aria-label="Formulario de contacto">
+    <div class="contacto-info">
+      <h3>¿Listo para tu próximo proyecto?</h3>
+      <p>Nuestro equipo de especialistas está disponible para asesorarte sin costo. Cuéntanos tu proyecto y te damos una cotización en menos de 24 horas.</p>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon" style="display:flex;align-items:center;justify-content:center;">
+          <svg viewBox="0 0 48 48" width="20" height="20" fill="#25D366"><path d="M24 4C12.954 4 4 12.954 4 24c0 3.531.929 6.85 2.555 9.72L4 44l10.52-2.52A19.9 19.9 0 0 0 24 44c11.046 0 20-8.954 20-20S35.046 4 24 4z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18.2 15.6c-.4-.9-.8-.92-1.18-.94-.3-.01-.65-.01-1-.01-.35 0-.92.13-1.4.65-.48.52-1.84 1.8-1.84 4.38 0 2.58 1.88 5.08 2.14 5.43.26.35 3.64 5.77 8.96 7.85 4.43 1.75 5.33 1.4 6.29 1.31.96-.09 3.1-1.27 3.54-2.49.44-1.22.44-2.27.31-2.49-.13-.22-.48-.35-.99-.61-.52-.26-3.1-1.53-3.58-1.7-.48-.18-.83-.26-1.18.26-.35.52-1.35 1.7-1.66 2.05-.3.35-.61.39-1.13.13-.52-.26-2.2-.81-4.19-2.58-1.55-1.38-2.6-3.08-2.9-3.6-.31-.52-.03-.8.23-1.06.23-.23.52-.61.78-.91.26-.3.35-.52.52-.87.18-.35.09-.65-.04-.91-.13-.26-1.16-2.85-1.62-3.89z" fill="white"/></svg>
+        </div>
+        <a href="https://wa.me/5214436942217" target="_blank" rel="noopener noreferrer" style="color:#25D366;font-weight:600;text-decoration:none;">+52 1 443 694 2217</a>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">✉️</div>
+        <a href="mailto:arturooropezaprieto3@gmail.com" style="color:var(--text);text-decoration:none;">arturooropezaprieto3@gmail.com</a>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📍</div>
+        <span>Zacapu, Michoacán</span>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">🕐</div>
+        <span>Lun–Vie: 7am–7pm | Sáb: 8am–2pm</span>
+      </div>
+
+      <div style="margin-top:1.5rem;padding:1rem;background:rgba(255,138,0,0.08);border-radius:8px;border:1px solid rgba(255,138,0,0.2);">
+        <div style="font-family:'Roboto Mono',monospace;font-size:0.6rem;letter-spacing:2px;color:var(--orange);margin-bottom:0.4rem;">// ZONAS DE SERVICIO</div>
+        <p style="font-size:0.72rem;color:var(--gray-concrete);line-height:1.7;">Zacapu · Morelia · Uruapan · Zamora · Pátzcuaro · Charapan · Nahuatzen</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre" style="font-weight:700;">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan García" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="telefono" style="font-weight:700;">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+52 55 0000-0000" required autocomplete="tel">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" style="font-weight:700;">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="correo@empresa.com" required autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label for="servicio" style="font-weight:700;">Tipo de servicio</label>
+        <select id="servicio" name="servicio" required>
+          <option value="">— Seleccionar servicio —</option>
+          <option>Albañilería y Obra Civil</option>
+          <option>Plomería e Instalaciones Hidráulicas</option>
+          <option>Electricidad Residencial</option>
+          <option>Electricidad Industrial</option>
+          <option>Vitropiso y Tablaroca</option>
+          <option>Mantenimiento Preventivo</option>
+          <option>Proyecto Integral (varios servicios)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="proyecto" style="font-weight:700;">Descripción del proyecto</label>
+        <textarea id="proyecto" name="proyecto" placeholder="Describe brevemente tu proyecto, dimensiones aproximadas, plazos y cualquier detalle relevante..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary" style="width:100%;text-align:center;padding:14px 20px;border-radius:24px;font-size:0.9rem;">
+        Enviar Solicitud
+      </button>
+      <div style="display:flex;gap:0.5rem;margin-top:0.75rem;">
+        <a href="https://wa.me/5214436942217" target="_blank" rel="noopener noreferrer" style="flex:1;display:flex;align-items:center;justify-content:center;gap:0.4rem;padding:10px 14px;border-radius:22px;background:#25D366;color:#fff;font-size:0.75rem;font-weight:600;text-decoration:none;">
+          <svg viewBox="0 0 48 48" width="16" height="16" fill="#fff"><path d="M24 4C12.954 4 4 12.954 4 24c0 3.531.929 6.85 2.555 9.72L4 44l10.52-2.52A19.9 19.9 0 0 0 24 44c11.046 0 20-8.954 20-20S35.046 4 24 4z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18.2 15.6c-.4-.9-.8-.92-1.18-.94-.3-.01-.65-.01-1-.01-.35 0-.92.13-1.4.65-.48.52-1.84 1.8-1.84 4.38 0 2.58 1.88 5.08 2.14 5.43.26.35 3.64 5.77 8.96 7.85 4.43 1.75 5.33 1.4 6.29 1.31.96-.09 3.1-1.27 3.54-2.49.44-1.22.44-2.27.31-2.49-.13-.22-.48-.35-.99-.61-.52-.26-3.1-1.53-3.58-1.7-.48-.18-.83-.26-1.18.26-.35.52-1.35 1.7-1.66 2.05-.3.35-.61.39-1.13.13-.52-.26-2.2-.81-4.19-2.58-1.55-1.38-2.6-3.08-2.9-3.6-.31-.52-.03-.8.23-1.06.23-.23.52-.61.78-.91.26-.3.35-.52.52-.87.18-.35.09-.65-.04-.91-.13-.26-1.16-2.85-1.62-3.89z" fill="white"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61588355014660" target="_blank" rel="noopener noreferrer" style="flex:1;display:flex;align-items:center;justify-content:center;gap:0.4rem;padding:10px 14px;border-radius:22px;background:#1877F2;color:#fff;font-size:0.75rem;font-weight:600;text-decoration:none;">
+          <svg viewBox="0 0 48 48" width="16" height="16" fill="#fff"><path d="M24 4C12.954 4 4 12.954 4 24c0 11.046 8.954 20 20 20s20-8.954 20-20S35.046 4 24 4zm3.5 12.5h-2v-2h-2v2h-2v2h2v2h2v-2h2v-2z"/></svg>
+          Facebook
+        </a>
+      </div>
+    </div>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">CHECOS<span>CONSTRUYENDO</span> SUEÑOS</div>
+      <p>Empresa mexicana especializada en construcción, plomería, electricidad e instalaciones industriales. Más de 15 años de experiencia al servicio de México.</p>
+      <div class="social-links">
+        <a class="social-link" href="#">f</a>
+        <a class="social-link" href="#">in</a>
+        <a class="social-link" href="#">ig</a>
+        <a class="social-link" href="#">yt</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <ul>
+        <li>Albañilería y Obra Civil</li>
+        <li>Plomería Hidráulica</li>
+        <li>Electricidad Residencial</li>
+        <li>Electricidad Industrial</li>
+        <li>Vitropiso y Tablaroca</li>
+        <li>Mantenimiento Técnico</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li>Quiénes somos</li>
+        <li>Proyectos</li>
+        <li>Certificaciones</li>
+        <li>Trabaja con nosotros</li>
+        <li>Aviso de Privacidad</li>
+        <li>Términos y Condiciones</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li>+52 (55) 1234-5678</li>
+        <li>contacto@tecnoobraMX.com</li>
+        <li>Lun–Vie: 7am–7pm</li>
+        <li>Sábado: 8am–2pm</li>
+        <li style="color:var(--orange);margin-top:0.8rem;">📍 Zacapu, Michoacán y región</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2025 CHECOS CONSTRUYENDO SUEÑOS — Todos los derechos reservados</span>
+    <span>Ing. en Construcción &amp; Instalaciones Industriales</span>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5214436942217?text=Hola,%20me%20interesa%20solicitar%20una%20cotización" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat with us on WhatsApp">
+  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M24 4C12.954 4 4 12.954 4 24c0 3.531.929 6.85 2.555 9.72L4 44l10.52-2.52A19.9 19.9 0 0 0 24 44c11.046 0 20-8.954 20-20S35.046 4 24 4z" fill="#25D366"/>
+    <path d="M24 6.4c-9.726 0-17.6 7.874-17.6 17.6 0 3.21.864 6.22 2.37 8.81L7 41l8.38-2.19A17.52 17.52 0 0 0 24 41.6c9.726 0 17.6-7.874 17.6-17.6S33.726 6.4 24 6.4z" fill="#25D366"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2 15.6c-.4-.9-.8-.92-1.18-.94-.3-.01-.65-.01-1-.01-.35 0-.92.13-1.4.65-.48.52-1.84 1.8-1.84 4.38 0 2.58 1.88 5.08 2.14 5.43.26.35 3.64 5.77 8.96 7.85 4.43 1.75 5.33 1.4 6.29 1.31.96-.09 3.1-1.27 3.54-2.49.44-1.22.44-2.27.31-2.49-.13-.22-.48-.35-.99-.61-.52-.26-3.1-1.53-3.58-1.7-.48-.18-.83-.26-1.18.26-.35.52-1.35 1.7-1.66 2.05-.3.35-.61.39-1.13.13-.52-.26-2.2-.81-4.19-2.58-1.55-1.38-2.6-3.08-2.9-3.6-.31-.52-.03-.8.23-1.06.23-.23.52-.61.78-.91.26-.3.35-.52.52-.87.18-.35.09-.65-.04-.91-.13-.26-1.16-2.85-1.62-3.89z" fill="white"/>
+  </svg>
+</a>
+
+<script>
+  // Form validation and submission - opens email client (SOC principle)
+  const contactForm = document.querySelector('form[action="#"]');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const formData = new FormData(contactForm);
+      const data = Object.fromEntries(formData);
+      
+      // Basic validation
+      if (!data.nombre || !data.email || !data.servicio || !data.proyecto) {
+        alert('Por favor, completa todos los campos requeridos.');
+        return;
+      }
+      
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(data.email)) {
+        alert('Por favor, ingresa un correo electrónico válido.');
+        return;
+      }
+      
+      // Build email body
+      const subject = encodeURIComponent('Solicitud de cotización - ' + data.servicio);
+      const body = encodeURIComponent(
+        'Nombre: ' + data.nombre + '\n' +
+        'Teléfono: ' + data.telefono + '\n' +
+        'Email: ' + data.email + '\n' +
+        'Tipo de servicio: ' + data.servicio + '\n\n' +
+        'Descripción del proyecto:\n' + data.proyecto
+      );
+      
+      // Open email client
+      window.location.href = 'mailto:arturooropezaprieto3@gmail.com?subject=' + subject + '&body=' + body;
+      
+      // Show message
+      alert('✅ Tu cliente de correo se abrirá. Envíanos el mensaje y te responderemos en menos de 24h.');
+      contactForm.reset();
+    });
+  }
+
+  // Intersection Observer for fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, (i % 4) * 120);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Smooth nav highlight
+  const sections = document.querySelectorAll('section[id]');
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY + 100;
+    sections.forEach(s => {
+      if (y >= s.offsetTop && y < s.offsetTop + s.offsetHeight) {
+        document.querySelectorAll('.nav-links a').forEach(a => {
+          a.style.color = '';
+          if (a.getAttribute('href') === '#' + s.id) a.style.color = 'var(--orange)';
+        });
+      }
+    });
+  });
+
+  // Mobile nav toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !isExpanded);
+    });
+
+    // Close menu when clicking a link
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[Unit]
+Description=Zrok Public Tunnel — Expose Backend API
+After=network-online.target autossh-kaspa.service
+Wants=network-online.target autossh-kaspa.service
+
+[Service]
+Type=simple
+Environment="PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin"
+ExecStartPre=/bin/bash -c 'until curl -sf http://127.0.0.1:8000/health >/dev/null 2>&1; do sleep 5; done'
+ExecStart=%h/.local/bin/zrok share public http://127.0.0.1:8000 --headless
+Restart=always
+RestartSec=10
+StandardOutput=journal
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,35 @@
+{
+  "name": "renova-v2",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Renova Energía Solar - Next.js 16 + React",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx serve out",
+    "export": "next build"
+  },
+  "keywords": [
+    "solar",
+    "energy",
+    "renova"
+  ],
+  "author": "Delphos Marketing",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "next": "16.2.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.6.0"
+  }
+}

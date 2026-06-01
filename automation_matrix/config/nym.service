@@ -1,0 +1,24 @@
+[Unit]
+Description=Nym Network Requester — Automation Matrix
+Documentation=https://nymtech.net/docs/nodes/network-requester.html
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart={{NYM_BIN}} run --id {{NODE_ID}}
+Restart=on-failure
+RestartSec=10
+KillSignal=SIGTERM
+TimeoutStopSec=30
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=nym-network-requester
+
+# Entorno
+Environment=RUST_LOG=info
+
+[Install]
+WantedBy=default.target

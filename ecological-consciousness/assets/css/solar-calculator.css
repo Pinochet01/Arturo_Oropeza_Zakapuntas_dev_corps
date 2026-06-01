@@ -1,0 +1,223 @@
+/* Solar Calculator - Ecological Consciousness */
+/* Externalized from inline styles */
+
+#calculator {
+  background: #f5f2eb;
+  padding: 80px 0;
+}
+
+#calculator .calc-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+#calculator .calc-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+#calculator .calc-brand {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #0F6E56;
+  margin-bottom: 8px;
+}
+
+#calculator .calc-header h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  font-family: Georgia, serif;
+  margin-bottom: 8px;
+}
+
+#calculator .calc-header p {
+  font-size: 14px;
+  color: #666;
+}
+
+.calc-card {
+  background: #fff;
+  border: 0.5px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.calc-section-label {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+.calc-input-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.calc-input-row:last-child {
+  margin-bottom: 0;
+}
+
+.calc-input-row label {
+  font-size: 13px;
+  color: #555;
+  min-width: 190px;
+}
+
+.calc-input-row input[type=range] {
+  flex: 1;
+  accent-color: #1D9E75;
+}
+
+.calc-input-row .calc-val {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  min-width: 72px;
+  text-align: right;
+}
+
+.calc-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+
+@media(min-width: 500px) {
+  .calc-metrics {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.calc-metric {
+  background: #fff;
+  border: 0.5px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.calc-metric-label {
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.calc-metric-value {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+
+.calc-metric-sub {
+  font-size: 10px;
+  color: #aaa;
+  margin-top: 3px;
+}
+
+.calc-bar-wrap {
+  margin-bottom: 1rem;
+}
+
+.calc-bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.calc-bar-bg {
+  background: #f0ede6;
+  border-radius: 4px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.calc-bar-fill {
+  height: 10px;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.calc-bar-solar {
+  background: #1D9E75;
+}
+
+.calc-bar-cfe {
+  background: #E24B4A;
+}
+
+.calc-post-preview {
+  background: #f5f2eb;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 13px;
+  color: #444;
+  line-height: 1.7;
+  white-space: pre-line;
+  margin-bottom: 1rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.calc-copy-btn {
+  width: 100%;
+  padding: 11px;
+  background: #fff;
+  color: #1a1a1a;
+  border: 0.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.calc-copy-btn:hover {
+  background: #f0ede6;
+}
+
+.calc-cta-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: #1D9E75;
+  color: #E1F5EE;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: background 0.2s;
+}
+
+.calc-cta-btn:hover {
+  background: #0F6E56;
+  color: #E1F5EE;
+}
+
+.calc-disclaimer {
+  font-size: 11px;
+  color: #aaa;
+  text-align: center;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .calc-input-row {
+    flex-wrap: wrap;
+  }
+  
+  .calc-input-row label {
+    min-width: 100%;
+  }
+}

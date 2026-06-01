@@ -1,0 +1,7 @@
+{
+  "wallet": "kaspa",
+  "network": "mainnet",
+  "keys_file": "/home/arturo_oropeza/.kaspawallet/kaspa-mainnet/keys.json",
+  "public_keys": [],
+  "daemon_port": 8082
+}

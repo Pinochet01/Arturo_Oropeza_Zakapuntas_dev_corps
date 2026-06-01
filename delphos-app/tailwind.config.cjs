@@ -1,0 +1,42 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        'neon-cyan': '#00FFFF',
+        'neon-magenta': '#FF00FF',
+        'neon-purple': '#BF00FF',
+        'neon-green': '#00FF9F',
+        'dark-bg': '#0A0A0F',
+        'dark-surface': '#12121A',
+        'dark-card': '#1A1A25',
+        'eco-primary': '#cc785c',
+        'eco-canvas': '#faf9f5',
+        'eco-gold': '#D4AF37',
+        'eco-gold-light': '#f5d68a',
+        'eco-dark': '#141413',
+        'eco-body': '#3d3d3a',
+        'eco-muted': '#6c6a64',
+        'eco-green': '#5db8a6',
+        'eco-whatsapp': '#25D366',
+        'constr-blue': '#1F3B73',
+        'constr-deep': '#0d1f42',
+        'constr-orange': '#FF8A00',
+        'constr-gold': '#FFD700',
+        'constr-gray': '#C7C7C7',
+        'constr-black': '#111111',
+      },
+      fontFamily: {
+        display: ['Playfair Display', 'serif'],
+        body: ['DM Sans', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
+        raleway: ['Raleway', 'sans-serif'],
+        oswald: ['Oswald', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        'roboto-mono': ['Roboto Mono', 'monospace'],
+      },
+    },
+  },
+  plugins: [],
+};

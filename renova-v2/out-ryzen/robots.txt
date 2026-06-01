@@ -1,0 +1,12 @@
+# Robots.txt for Renova Energía Solar
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private paths
+Disallow: /api/
+Disallow: /crm/
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://renova.mx/sitemap.xml
